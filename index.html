@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body onload="addTabIndex()">
+  <h1>Interactive Photo Gallery</h1>
+
+  <div id="image" role="img" aria-label="Hover over or focus on an image below to display here.">
+    Hover over or focus on an image below to display here.
+  </div>
+
+  <div id="thumbnails">
+    <figure>
+      <img src="https://picsum.photos/id/237/200/200"
+           alt="A cute black Labrador puppy looking at the camera"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Black Puppy</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1015/200/200"
+           alt="A winding river flowing through a green mountain valley"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Mountain River</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1025/200/200"
+           alt="A pug dog sitting comfortably on a wooden chair"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Pug on a Chair</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1035/200/200"
+           alt="A misty mountain landscape with fog rolling through the peaks"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Misty Mountains</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/1074/200/200"
+           alt="A calm ocean reflecting warm sunset colors on the horizon"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Ocean Sunset</figcaption>
+    </figure>
+
+    <figure>
+      <img src="https://picsum.photos/id/106/200/200"
+           alt="A scenic red bridge stretching over a body of still water"
+           onmouseover="upDate(this)" onmouseleave="undo()"
+           onfocus="upDate(this)" onblur="undo()">
+      <figcaption>Bridge Over Water</figcaption>
+    </figure>
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>
+
